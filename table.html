@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPARK TOURISM_HotelBooking</title>
+  <link rel="stylesheet" href="table.css" />
+  <script src="table.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Hotel Booking</h1>
+    <form id="reservation-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="number" id="phone" name="phone" required />
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required />
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required />
+      </div>
+      <!-- <div class="form-group">
+        <label for="table">Table Number</label>
+        <select id="table" name="table" required>
+          <option value="">Select a table</option>
+          <option value="1">Table 1</option>
+          <option value="2">Table 2</option>
+          <option value="3">Table 3</option>
+          <option value="4">Table 4</option>
+          <option value="5">Table 5</option>
+        </select>
+      </div> -->
+      <div class="form-group">
+        <button type="submit" id="submit" onclick="myfunction()" >Submit</button>
+        <script>
+            function myfunction(){
+                alert(" Table Booked Successfully")
+            }
+        </script>
+      </div>
+    </form>
+    <div id="message"></div>
+  </div>
+</body>
+</html>
